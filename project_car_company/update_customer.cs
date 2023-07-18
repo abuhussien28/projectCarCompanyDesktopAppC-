@@ -90,7 +90,7 @@ namespace project_car_company
             SqlCommand CMD = new SqlCommand("update Data_customer set date_recive=@date_recive where FrName=@FrName", con);
             con.Open();
             CMD.Parameters.AddWithValue("@FrName", this.frist_datacomboBox3.Text);
-            CMD.Parameters.AddWithValue("@date_recive", this.datereciveTimePicker1);
+            CMD.Parameters.AddWithValue("@date_recive", this.datereciveTimePicker1.Value);
             CMD.ExecuteNonQuery();
             MessageBox.Show("updated sussessful");
             con.Close();
@@ -160,10 +160,10 @@ namespace project_car_company
         private void update_datebook_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-REGMQJ5;Initial Catalog=car_company;Integrated Security=True");
-            SqlCommand CMD = new SqlCommand("update Data_customer set date_book=@datebook where FrName=@FrName", con);
+            SqlCommand CMD = new SqlCommand("update Data_customer set date_book=@date_book where FrName=@FrName", con);
             con.Open();
             CMD.Parameters.AddWithValue("@FrName", this.frist_datacomboBox3.Text);
-            CMD.Parameters.AddWithValue("@date_book", this.dateTimePicker2);
+            CMD.Parameters.AddWithValue("@date_book", this.dateTimePicker2.Value);
             CMD.ExecuteNonQuery();
             MessageBox.Show("updated sussessful");
             con.Close();
@@ -188,6 +188,7 @@ namespace project_car_company
             addressgroupBox1.Visible = false;
             service_typegroupBox2.Visible = true;
             service_typegroupBox2.Location = new Point(100, 100);
+            ser.Visible = true;
             fillcombox(frist_servicecomboBox5);
         }
 
@@ -197,7 +198,7 @@ namespace project_car_company
             SqlCommand CMD = new SqlCommand("update Data_customer set service_type=@service_type where FrName=@FrName", con);
             con.Open();
             CMD.Parameters.AddWithValue("@FrName", this.frist_servicecomboBox5.Text);
-            CMD.Parameters.AddWithValue("@date_book", this.service_typecomboBox6);
+            CMD.Parameters.AddWithValue("@service_type", this.service_typecomboBox6.SelectedItem.ToString());
             CMD.ExecuteNonQuery();
             MessageBox.Show("updated sussessful");
             con.Close();

@@ -79,6 +79,7 @@ namespace project_car_company
             this.viewstatusToolStripMenuItem.Name = "viewstatusToolStripMenuItem";
             this.viewstatusToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.viewstatusToolStripMenuItem.Text = "view_status";
+            this.viewstatusToolStripMenuItem.Click += new System.EventHandler(this.viewstatusToolStripMenuItem_Click);
             // 
             // soldToolStripMenuItem
             // 
@@ -136,6 +137,7 @@ namespace project_car_company
             this.dataGridView_data.RowTemplate.Height = 29;
             this.dataGridView_data.Size = new System.Drawing.Size(568, 340);
             this.dataGridView_data.TabIndex = 0;
+            this.dataGridView_data.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_data_CellContentClick);
             // 
             // deletegroupBox2
             // 
@@ -163,6 +165,7 @@ namespace project_car_company
             this.button4_clear.TabIndex = 79;
             this.button4_clear.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.button4_clear.UseVisualStyleBackColor = false;
+            this.button4_clear.Click += new System.EventHandler(this.button4_clear_Click);
             // 
             // comboBox2
             // 
@@ -207,6 +210,7 @@ namespace project_car_company
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(437, 28);
             this.comboBox1.TabIndex = 82;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dataGridView_serach
             // 

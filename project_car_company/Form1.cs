@@ -78,19 +78,25 @@ namespace project_car_company
             SqlDataReader dr = cmd.ExecuteReader();
             if (user_name.Text.Length != 0 || password.Text.Length != 0)
             {
-
-
-                if (dr.Read() || (user_name.Text == "admin" && password.Text == "admin"))
+                if (user_name.Text == "admin" && password.Text == "admin")
                 {
                     mainscreen ms = new mainscreen();
                     ms.Show();
                     this.Hide();
-
                 }
-                else
+                else if (dr.Read())
                 {
-                    MessageBox.Show("renter your name or Ssn ");
+                    mainscreen ms = new mainscreen();
+                    ms.Show();
+                    ADD_NEW_EMPLOYEE ad = new ADD_NEW_EMPLOYEE();
+                    ad.Close();
+                    this.Hide();
                 }
+                    else
+                    {
+                        MessageBox.Show("renter your name or Ssn ");
+                    }
+                
 
             }
             con.Close();

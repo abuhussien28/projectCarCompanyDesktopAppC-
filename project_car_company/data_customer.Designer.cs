@@ -59,7 +59,6 @@ namespace project_car_company
             this.aDDNEWCUSTOMERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uPDATEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.car_model_combo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -326,8 +325,7 @@ namespace project_car_company
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aDDNEWCUSTOMERToolStripMenuItem,
             this.uPDATEToolStripMenuItem,
-            this.dELETEToolStripMenuItem,
-            this.vIEWToolStripMenuItem});
+            this.dELETEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1137, 28);
@@ -351,16 +349,9 @@ namespace project_car_company
             // dELETEToolStripMenuItem
             // 
             this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
-            this.dELETEToolStripMenuItem.Text = "DELETE";
+            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.dELETEToolStripMenuItem.Text = "DELETEAndSearch";
             this.dELETEToolStripMenuItem.Click += new System.EventHandler(this.dELETEToolStripMenuItem_Click);
-            // 
-            // vIEWToolStripMenuItem
-            // 
-            this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
-            this.vIEWToolStripMenuItem.Text = "search_view";
-            this.vIEWToolStripMenuItem.Click += new System.EventHandler(this.vIEWToolStripMenuItem_Click);
             // 
             // label7
             // 
@@ -496,7 +487,6 @@ namespace project_car_company
         private System.Windows.Forms.ToolStripMenuItem aDDNEWCUSTOMERToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uPDATEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vIEWToolStripMenuItem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox car_model_combo;
         private System.Windows.Forms.Label label8;

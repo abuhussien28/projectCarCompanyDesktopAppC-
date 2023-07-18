@@ -83,6 +83,7 @@ namespace project_car_company
             this.aDDNEWEMPLOYEEToolStripMenuItem.Name = "aDDNEWEMPLOYEEToolStripMenuItem";
             this.aDDNEWEMPLOYEEToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.aDDNEWEMPLOYEEToolStripMenuItem.Text = "Employee";
+            this.aDDNEWEMPLOYEEToolStripMenuItem.Click += new System.EventHandler(this.aDDNEWEMPLOYEEToolStripMenuItem_Click);
             // 
             // aDDNEWEMPLOYEEToolStripMenuItem1
             // 
@@ -165,7 +166,7 @@ namespace project_car_company
             this.deletegroupBox4.Controls.Add(this.label7);
             this.deletegroupBox4.Location = new System.Drawing.Point(363, 52);
             this.deletegroupBox4.Name = "deletegroupBox4";
-            this.deletegroupBox4.Size = new System.Drawing.Size(644, 128);
+            this.deletegroupBox4.Size = new System.Drawing.Size(712, 128);
             this.deletegroupBox4.TabIndex = 78;
             this.deletegroupBox4.TabStop = false;
             this.deletegroupBox4.Text = "Delete";
@@ -193,6 +194,7 @@ namespace project_car_company
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(235, 28);
             this.comboBox4.TabIndex = 77;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -239,6 +241,7 @@ namespace project_car_company
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(744, 235);
             this.dataGridView1.TabIndex = 81;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // search_btn
             // 

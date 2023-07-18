@@ -20,7 +20,7 @@ namespace project_car_company
         {
             ADD_NEW_EMPLOYEE ad = new ADD_NEW_EMPLOYEE();
             ad.Show();
-         
+
         }
 
         private void uPDATEToolStripMenuItem_Click(object sender, EventArgs e)
@@ -212,6 +212,21 @@ namespace project_car_company
         }
 
         private void addcustomerbuyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aDDNEWEMPLOYEEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
